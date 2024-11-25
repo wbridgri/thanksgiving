@@ -274,6 +274,13 @@ class MenuForm {
                     person,
                     [name]: [...this.plate[name], value]
                 }
+
+                this.menu.forEach(item => {
+                        if ( checkbox.value == item.item) {
+                            item.isChecked = checkbox.checked
+
+                        }
+                })
                 
                 
             
@@ -282,8 +289,23 @@ class MenuForm {
 
         })
 
-        console.log(this.plate);
+        // console.log(this.plate);
+        this.makeReceipt(this.menu)
         
+    }
+
+    makeReceipt(arr) {
+        for(let i =0 ; i< arr.length; i++) {
+            if (arr[i].isChecked) {
+                const listItem = document.createElement('li');
+                listItem.classList.add('list-group-item')
+                listItem.innerText = arr[i];
+    
+                this.foodList.appendChild(listItem);
+                console.log(foodList)
+            }
+
+        }
     }
 }
 
