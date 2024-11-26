@@ -22,7 +22,7 @@ class MenuForm {
                 id: 1,
                 type: 'meat',
                 item: 'fried turkey',
-                imgUrl: 'friedTurkey.jpg',
+                imgUrl: 'images/friedTurkey.jpg',
                 isChecked: false,
                 madeBy: 'Dad'
             },
@@ -30,7 +30,7 @@ class MenuForm {
                 id: 2,
                 type: 'meat',
                 item: 'chicken and sausage gumbo',
-                imgUrl: 'gumbo',
+                imgUrl: 'images/gumbo.jpg',
                 isChecked: false,
                 madeBy: 'Mom'
             },
@@ -38,7 +38,7 @@ class MenuForm {
                 id: 3,
                 type: 'meat',
                 item: 'ham',
-                imgUrl: 'ham.jpg',
+                imgUrl: 'images/ham.jpg',
                 isChecked: false,
                 madeBy: 'Will'
             },
@@ -46,7 +46,7 @@ class MenuForm {
                 id: 4,
                 type: 'meat',
                 item: 'turducken',
-                imgUrl: 'turducken.jpg',
+                imgUrl: 'images/turducken.jpg',
                 isChecked: false,
                 madeBy: 'Will'
             },
@@ -54,7 +54,7 @@ class MenuForm {
                 id: 5,
                 type: 'sides',
                 item: 'dressing',
-                imgUrl: 'dressing.jpg',
+                imgUrl: 'images/dressing.jpg',
                 isChecked: false,
                 madeBy: 'Mom'
             },
@@ -62,7 +62,7 @@ class MenuForm {
                 id: 6,
                 type: 'sides',
                 item: 'potato salad',
-                imgUrl: 'potatoSalad.jpg',
+                imgUrl: 'images/potatoSalad.jpg',
                 isChecked: false,
                 madeBy: 'Ashley'
             },
@@ -70,7 +70,7 @@ class MenuForm {
                 id: 7,
                 type: 'sides',
                 item: 'green bean bundles',
-                imgUrl: 'greenBeans.jpg',
+                imgUrl: 'images/greenBeans.jpg',
                 isChecked: false,
                 madeBy: 'Ashley'
             },
@@ -79,7 +79,7 @@ class MenuForm {
                 id: 8,
                 type: 'sides',
                 item: 'cranberry sauce',
-                imgUrl: 'cranberrySauce.jpg',
+                imgUrl: 'images/cranberrySauce.jpg',
                 isChecked: false,
                 madeBy: 'Amanda'
             },
@@ -88,7 +88,7 @@ class MenuForm {
                 id: 9,
                 type: 'sides',
                 item: 'candied yams',
-                imgUrl: 'candiedYamsjpg',
+                imgUrl: 'images/candiedYams.jpg',
                 isChecked: false,
                 madeBy: 'Ashley'
             },
@@ -97,7 +97,7 @@ class MenuForm {
                 id: 10,
                 type: 'sides',
                 item: 'turnip greens',
-                imgUrl: 'turnipGreens.jpg',
+                imgUrl: 'images/turnipGreens.jpg',
                 isChecked: false,
                 madeBy: 'Will'
             },
@@ -106,7 +106,7 @@ class MenuForm {
                 id: 11,
                 type: 'sides',
                 item: 'mashed potatoes',
-                imgUrl: 'mashedPotatoes.jpg',
+                imgUrl: 'images/mashedPotatoes.jpg',
                 isChecked: false,
                 madeBy: 'Ashley'
             },
@@ -115,7 +115,7 @@ class MenuForm {
                 id: 12,
                 type: 'sides',
                 item: 'mac and cheese',
-                imgUrl: 'macAndCheese.jpg',
+                imgUrl: 'images/macAndCheese.jpg',
                 isChecked: false,
                 madeBy: 'Amanda'
             },
@@ -123,7 +123,7 @@ class MenuForm {
                 id: 13,
                 type: 'desserts',
                 item: 'sweet potato pie',
-                imgUrl: 'sweetPotatoPie.jpg',
+                imgUrl: 'images/sweetPotatoPie.jpg',
                 isChecked: false,
                 madeBy: 'Ashley'
             },
@@ -131,7 +131,7 @@ class MenuForm {
                 id: 14,
                 type: 'desserts',
                 item: 'pecan pie',
-                imgUrl: 'pecanPie.jpg',
+                imgUrl: 'images/pecanPie.jpg',
                 isChecked: false,
                 madeBy: 'Amanda'
             },
@@ -139,7 +139,7 @@ class MenuForm {
                 id: 15,
                 type: 'desserts',
                 item: 'pumpkin pie',
-                imgUrl: 'pumpkinPie.jpg',
+                imgUrl: 'images/pumpkinPie.jpg',
                 isChecked: false,
                 madeBy: 'Ashley'
             },
@@ -147,7 +147,7 @@ class MenuForm {
                 id: 16,
                 type: 'desserts',
                 item: 'red velvet cake',
-                imgUrl: 'redVelvetCake.jpg',
+                imgUrl: 'images/redVelvetCake.jpg',
                 isChecked: false,
                 madeBy: 'Amanda'
             },
@@ -155,28 +155,28 @@ class MenuForm {
                 id: 17,
                 type: 'drinks',
                 item: 'Everclear',
-                imgUrl: 'everclear.jpg',
+                imgUrl: 'images/everclear.jpg',
                 isChecked: false,
             },
             {
                 id: 18,
                 type: 'drinks',
                 item: 'sweet tea',
-                imgUrl: 'sweetTea.jpg',
+                imgUrl: 'images/sweetTea.jpg',
                 isChecked: false,
             },
             {
                 id: 19,
                 type: 'drinks',
                 item: 'whiskey',
-                imgUrl: 'whiskey.jpg',
+                imgUrl: 'images/whiskey.jpg',
                 isChecked: false,
             },
             {
                 id: 20,
                 type: 'drinks',
                 item: 'lemonade',
-                imgUrl: 'lemonade.jpg',
+                imgUrl: 'images/lemonade.jpg',
                 isChecked: false,
             },
             
@@ -207,9 +207,9 @@ class MenuForm {
             column.classList.add('col');
 
             column.innerHTML = `
-                                <div class="figure-div" data-isChecked=${obj.isChecked}>
+                                <div class="figure-div h-100" data-isChecked=${obj.isChecked}>
                                     <figure class="figure item-figure">
-                                        <img src="https://via.placeholder.com/200x200"alt="placeholder img"class="img-fluid image figure-img food-image" />
+                                        <img src="${obj.imgUrl}" alt="placeholder img"class="img-fluid image figure-img food-image" />
                                         <figcaption class="figure-caption food-caption">${obj.hasOwnProperty('madeBy') ? obj.madeBy : ''}</figcaption>
                                     </figure>
                                     <h3 class="food-heading">${obj.item}</h3>
@@ -283,11 +283,19 @@ class MenuForm {
                 })
                 
                 
-            
+                
+            } else {
+                this.menu.forEach(item => {
+                    if(checkbox.value == item.item) {
+                        item.isChecked = false;
+                    }
+                })
             }
-
-
+            
+            
         })
+        const personPlate = document.getElementById('personPlate');
+        personPlate.innerText = `${this.plate.person}'s`
 
         // console.log(this.plate);
         this.makeReceipt(this.menu)
@@ -298,11 +306,11 @@ class MenuForm {
         for(let i =0 ; i< arr.length; i++) {
             if (arr[i].isChecked) {
                 const listItem = document.createElement('li');
-                listItem.classList.add('list-group-item')
-                listItem.innerText = arr[i];
-    
+                listItem.classList.add('list-group-item');
+                listItem.innerText = arr[i].item;
                 this.foodList.appendChild(listItem);
-                console.log(foodList)
+                
+
             }
 
         }
@@ -314,6 +322,7 @@ const submitBtn = document.getElementById('submitBtn');
 const action = new MenuForm();
 action.init();
 
-submitBtn.addEventListener('click', () => {
+submitBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     action.buildPlate ();
 })

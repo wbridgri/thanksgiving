@@ -1,0 +1,45 @@
+
+
+:root {
+    --prim: #FF6B35;
+    --sec: #F7C59F;
+    --tert: #EFEFD0;
+    --quat: #4E0110;
+}
+
+*{box-sizing: border-box;}
+
+
+body {
+    background-color: var(--sec);
+}
+
+h1, h2, h3, p {
+    color: var(--quat);
+}
+
+#submitBtn {
+    border: 1px solid var(--prim);
+    background-color: var(--prim);
+}
+
+#submitBtn:hover {
+    background-color: var(--quat);
+    color: var(--tert);
+    border: 1px solid var(--quat);
+}
+
+.list-group-item {
+    background-color: var(--sec);
+}
+
+.figure-div {
+    background-color: var(--quat);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--tert);
+}
+
+.food-caption {
+    color: var(--tert);
+}
